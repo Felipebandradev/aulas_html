@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    
+    <header>
+        <h1>Tags e Atributos para Formularios</h1>
+         <hr>
+         <p>Interface com campos para entrada e seleção de dados.</p>
+    </header>
+    <main>
+        <!-- Grupo de Campus -->
+        <form action="" method="post">
+            <!-- Nome -->
+            <label for="nome">Nome:</label>
+            <input  required  placeholder="Informe teu nome completo" type="text" name="nome" id="nome">
+           <p>
+               <!-- E-mail -->
+               <label for="e-mail">E-mail</label>
+               <input required type="email" name="e-mail" id="e-mail" placeholder="informe seu e-mail">
+           </p>
+           <p>deseja receber informativo? <br>
+             <input type="radio" name="informativos" id="sim">
+             <label for="sim">Sim</label>
+             <input type="radio" name="informativos" id="nao">
+             <label for="nao">Não</label>
+            </p>
+           <p>Escolhas as tecnologias de sua preferência: <br>
+                <input type="checkbox" name="tecnologias" id="html">
+                <label for="hmtl">Html</label>
+                <input type="checkbox" name="tecnologias" id="css">
+                <label for="css">Css</label>
+                <input type="checkbox" name="tecnologias" id="javascript">
+                <label for="javascript">JavaScript</label>
+            </p>
+        
+        
+            <!-- Data de Nascimento -->
+           <p>
+                <label for="datadenascimento">Data de Nascimento:</label>
+                <input required type="date" name="datadenascimento" id="datadenascimento">
+           </p>
+            <!--  Assunto -->
+            <p>
+                <label for="assunto">Assunto:</label>
+                <select required name="assunto" id="assunto">
+                    <option value=""></option>
+                    <option value="1">Reclamação</option>
+                    <option value="2">Me da Dinheiro</option>
+                    <option value="3">Compra de paçoca</option>
+                    <option value="4">Sem Assunto</option>
+                    <option value="5">666</option>
+                    <option value="6">Amogus</option>
+                </select>
+            </p>
+            <!-- Menssagem -->
+                <p>
+                    <label for="menssagem">Menssagem(Minímo de 5 e Maxímo de 50):</label><br>
+                    <textarea required minlength="5" maxlength="50" name="menssagem" id="menssagem" cols="25" rows="5"></textarea>
+                </p>
+                <!-- Senha -->
+                <p>
+                    <label for="senha">Senha:</label>
+                    <input required type="password" name="senha" id="senha">
+                </p>
+            <!-- Botão -->
+            <p><button type="submit">Enviar&#10004;</button></p>
+        </form>
+    </main>
+    <hr>
+    <footer >
+       <p style="text-align:center;">&copy;2023 Site de formulario criado por <b>Vsvideo</b></p>
+    </footer>
+   
+        
+
+
+        
+    
+   </main>
+
+</body>
+</html>

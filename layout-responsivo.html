@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+        *{ box-sizing: border-box;}
+
+        html{ font-size: 16px;}
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: beige;
+        }
+
+        #container{
+            background-color: rgb(255, 255, 255);
+            box-shadow: black 0 0 10px;
+            padding: 1%;
+        }
+
+        header{
+            background-color: dodgerblue;
+            text-align: center;
+        }
+
+        /* css reset 
+        Removemos o espaçamento padrão de algumas tags do site*/
+        h1, h2, p{
+            margin: 0;
+            padding: 0; 
+        }
+
+        nav{ background-color: yellow;}
+
+        #colunaA{ background-color: rgb(60, 199, 60);}
+
+        #colunaB{ background-color: chocolate;}
+
+        #colunaC{ background-color: pink;}
+
+        footer{ background-color: gray;}
+
+        h2, p{
+            padding: 0.5rem;
+        }
+
+        /* opção1: seletor agrupado com as classes */
+        #colunaA,  #colunaB,  #colunaC{
+            min-height: 150px;
+        }
+
+        /* opção2: seletor tag article */
+        /* article{ } */
+
+        /* Etepa2: regras de uso condicional */
+
+        /* Media Queries */
+
+        /* regras para telas apartir de 700px de largura */
+        @media screen and (min-width:700px) {
+            header{
+               display: flex;
+               justify-content: space-between;
+               height: 80px;
+               align-items: center;
+            }
+
+            nav{ 
+                height: 40px;
+
+                /* usamos % para garantis que a referência do tamanho é o header e se fosse4 em relação a tela usariamos vw */
+                width: 50%;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            main{ 
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #colunaA{ width: 60%;}
+            #colunaB{ width: 40%;}
+            #colunaC{ width: 100%;}
+        } /* Fim da Media Querry de 700px */
+
+        @media screen and (min-width: 900px) {
+            #colunaA,#colunaB,#colunaC{ width: 33.3%; }
+
+            #container{
+                max-width: 900px;
+                margin: auto;
+            }
+
+            html{
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Aqui estamos usando a container para agrupar todas as tags do layout do site -->
+    <div id="container">
+
+        <!-- Cabeçalho -->
+        <header>
+            <!-- Nome/logo do site -->
+            <h1>Mobile First</h1>
+
+            <!-- Menu -->
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+        </header>
+
+        <!-- Área de Conteudo -->
+        <main>
+            <article id="colunaA">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci quibusdam aliquid, explicabo iste facilis voluptates quos corporis alias excepturi laboriosam odio iusto aut eius? Perferendis saepe possimus voluptate enim.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis unde quibusdam fugiat corporis incidunt autem eius sit rerum exercitationem sunt.</p>
+            </article>
+            <article id="colunaB">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus corporis beatae quia nobis blanditiis esse necessitatibus doloribus exercitationem tempore, laudantium aliquid id eaque saepe totam repellat magnam qui voluptatem facere!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos totam iusto ratione. Dolorem, amet! Voluptate dicta consectetur exercitationem obcaecati rerum eius a.</p>
+            </article>
+            <article id="colunaC">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus, tempore unde distinctio, tempora quia at recusandae magnam dolor inventore beatae quidem harum illo voluptates architecto laborum nesciunt quasi aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellat, magni quas cum nulla dignissimos quae rem sit voluptates assumenda aut quibusdam. Similique magni, vero hic deleniti exercitationem sapiente quas a repudiandae error molestiae non ea reprehenderit natus nemo cupiditate, quam unde praesentium recusandae, accusamus nobis atque nostrum nulla est.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, repellendus totam mollitia distinctio esse eum! Dolor, quasi eaque? Odio repellat enim officiis mollitia maxime. Dicta cumque suscipit voluptatem nulla voluptate.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ut tempore distinctio ad cumque aperiam atque ab fugiat a doloremque!</p>
+            </article>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <h2>Design responsivo</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

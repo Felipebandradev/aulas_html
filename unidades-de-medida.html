@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando unidades de Medida</title>
+
+    <style>
+
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    html{
+        font-size: 16px;
+    }
+
+    h1{ font-size: 3rem;}
+    h2{ font-size: 2rem;}
+    h3{font-size: 1.5rem;}
+    p{
+        font-size: 1rem;
+    }
+
+    #exemplo-viewport{
+       border: solid red 2px; 
+       width: 400px;
+       margin: auto;
+       height: 23vh;
+    }
+    #um{
+        background-color: aqua;
+        width: 41.5vw;
+    }
+    #dois{
+    background-color: chartreuse;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Unidades de Medida para design responsivo</h1>
+    <hr>
+    <!--  unidades ja conhecida/ usadas:
+    px(pixel) e %(porcentsgem) -->
+    <h2>REM (R-EME)</h2>
+
+    <p>
+        A medida R-EME (rem) é relativa ao <code>Font-Size</code> do elemento <b>raíz html</b>
+    </p>
+
+    <h3>Lorem, ipsum dolor.</h3>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates iure dignissimos repellendus sit, eius enim recusandae, dolore totam iste in vero esse, nam temporibus. Quos autem aliquid atque reiciendis alias?
+    </p>
+
+    <ul>
+        <li> lorem</li>
+        <li> lorem</li>
+    </ul>
+
+    <hr>
+
+    <h2>VW & VH</h2>
+    <p>As medidas
+         <abbr title="viewport width">
+            VW
+         </abbr> e
+         <abbr title="viewport height">
+            VH
+         </abbr>
+         são relativas à área de visualização do navegador (chamada de viewport).
+    </p>
+
+
+    <div id="exemplo-viewport" >
+        <div id="um">
+
+            <h3>
+                um
+            </h3>
+            <p>
+                Lorem ipsum dolor sit.
+            </p>
+        </div>
+
+        <div id="dois">
+            <h3>
+                dois
+            </h3>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+
+      
+
+    </div>
+</body>
+</html>

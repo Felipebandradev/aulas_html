@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox teste</title>
+
+<style>
+ *{ box-sizing: border-box;}
+ 
+ body{ font-family: Arial, Helvetica, sans-serif;} 
+ 
+ article{
+    box-shadow: black 1px 1px 15px;
+    padding: 10px;
+    border-radius: 8px;
+    height: 400px;
+    width: 30%;
+ }
+
+ .container{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    /* align-content: center; */
+
+    border: solid 10px rgb(7, 7, 7);
+    width: 80%;
+    margin: auto;
+    /* padding: 10px; */
+    height: 2000px;
+}
+
+.itens{
+    background-color: aqua;
+    align-self: flex-start;
+}
+
+img{max-width: 100%;}
+
+
+
+
+
+</style>
+</head>
+<body>
+    <h1>Trabalhando FlexBox</h1>
+
+    <p>
+        FlexBox é um mecanismo css3 que permite aplicar facilmente recursos de alinhamento , espaçamento e distribuição de elementos no Html. Muito util na elaboração de layouts
+    </p>
+    <div class="container">
+        <article class="itens">
+        <img src="imagens/mini-apple.jpg" alt="imagem logo apple">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore dignissimos fuga cum aut ipsa vero aliquam, est alias. Veritatis.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla nihil a accusantium magni magnam dolorem facere officia, ab nesciunt!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla nihil a accusantium magni magnam dolorem facere officia, ab nesciunt!</p>
+        </article>
+
+      <article>
+        <img src="imagens/mini-apple.jpg" alt="imagem logo apple">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore dignissimos fuga cum aut ipsa vero aliquam, est alias. Veritatis.</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla nihil a accusantium magni magnam dolorem facere officia, ab nesciunt!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla nihil a accusantium magni magnam dolorem facere officia, ab nesciunt!</p>
+        </article>
+
+        
+    </div>
+
+
+</body>
+</html>

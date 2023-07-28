@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Imagens</title>
+</head>
+<body>
+    <h1>Trabalhando com Imagens</h1>
+    <hr>
+    <h2>Formatos mais comuns para web</h2>
+    <ul>
+        <li>JPEG/JPG: em geral para fotos com suporte a milhões de cores e com compressão.</li>
+        <li>GIF: usado para desenhos, suporta animação e transparência.</li>
+        <li>PNG: bom para fotos com milhões de cores,suporte a compressão e transparência.</li>
+        <li>SVG: formato vetorial,ou seja, baseado em nós , segmentos,linhas. Bom para ilustrações e para casos em que será necessário a imagem.</li>
+    </ul>
+    <hr>
+    <!-- pixabay,unsplash é muito bom para pegar imagens -->
+    <!--  Sobre Imagens no HTML
+        -Tag <img>
+        -Atributos:
+        src:indica o caminho do arquivo de imagem e o proprio arquivo
+        alt: texto alternativo(pequena descrição da imagem)
+    -->
+    <h2>Exemplos</h2>
+
+    <img src="imagens/pink-floyd.jpg" alt="Integrantes da banda pink-floyd acenando para o publico">
+    <!-- imagens dentro de outras tags -->
+    <p>
+        <img src="imagens/logo-html5.png" alt="">
+        <img src="imagens/logo-css3.gif" alt="">
+        <img src="imagens/logo-javascript.gif" alt="">
+    </p>
+
+
+
+  <!-- Imagens são colocadas lado a lado (se hover espaço) -->
+    <p>
+        <img src="imagens/dedos.jpg" alt="">
+        <img src="imagens/ideias.jpg" alt="">
+        <img src="imagens/pacoca.jpg" alt="">
+    </p>
+
+    <!-- imagens são colocadas uma em cima da outra, não importa o tamnho da tela -->
+
+    <p><img src="imagens/dedos.jpg" alt=""></p>
+    <p><img src="imagens/ideias.jpg" alt=""></p>
+    <p><img src="imagens/pacoca.jpg" alt=""></p>
+
+
+
+    <!-- novidade no HTML5 para ilustrações em geral -->
+    <!-- figcaption é a legenda e não se pode utilizar sem o figure -->
+    <!-- http://www.maujor.com/blog/2010/04/13/os-elementos-figure-e-figcaption-da-html5/ -->
+    <figure>
+        <img src="imagens/stonehenge.jpg" alt="">
+        <figcaption>Ruínas do stonehenge (foto tirada em 2012)</figcaption>
+    </figure>
+
+    <hr>
+    <!-- Imagens png/jpg/gif:Bitmap(formadas por pixels) -->
+    <p><img src="imagens/black-cat.png" alt=""></p>
+
+    <!-- Imagem svg: vetor (formada por nós linhas) -->
+    <p><img src="imagens/black-cat.svg" alt=""></p>
+
+</body>
+</html>
